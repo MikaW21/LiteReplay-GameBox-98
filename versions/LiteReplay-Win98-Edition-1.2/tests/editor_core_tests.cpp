@@ -1,0 +1,9 @@
+#include "editor/core.hpp"
+#include <cassert>
+#include <functional>
+#include <iostream>
+using namespace lc;
+void rejects(const std::function<void()>& f){bool hit=false;try{f();}catch(...){hit=true;}assert(hit);}
+int main(){assert(recommendedMbps(1280,30)==8);assert(recommendedMbps(1920,60)==28);assert(recommendedMbps(2560,75)==60);Clip c{"C:\\视频 folder\\a & b.mp4",10,1.25,4.75,50,true};Project p;p.clips={c};auto restored=deserialize(serialize(p));assert(restored.clips[0].path==c.path);assert(restored.clips[0].in==1.25);assert(total(restored)==3.5);assert(serialize(restored)==serialize(p));rejects([]{deserialize("LITECUT 9\n");});rejects([]{deserialize("LITECUT 1\n1920 1080 60 20 0\n99999\n");});rejects([&]{auto x=c;x.in=x.out;validate(x);});rejects([&]{auto x=c;x.out=11;validate(x);});rejects([&]{auto x=c;x.volume=201;validate(x);});rejects([&]{auto x=c;x.duration=NAN;validate(x);});rejects([&]{deserialize(serialize(p)+"junk");});
+auto a=segmentArgs(c,p.settings,"out.mp4");assert(std::any_of(a.begin(),a.end(),[](const auto& x){return x.find("flags=lanczos")!=std::string::npos;}));assert(std::find(a.begin(),a.end(),"h264_nvenc")!=a.end());assert(std::find(a.begin(),a.end(),"0:a:0")!=a.end());assert(std::find(a.begin(),a.end(),"-n")!=a.end());p.settings.encoder=1;c.audio=false;a=segmentArgs(c,p.settings,"out.mp4");assert(std::find(a.begin(),a.end(),"anullsrc=r=48000:cl=stereo")!=a.end());assert(std::find(a.begin(),a.end(),"1:a:0")!=a.end());assert(std::find(a.begin(),a.end(),"mpeg4")!=a.end());
+assert(quoteWindows(L"")==L"\"\"");assert(quoteWindows(L"a b")==L"\"a b\"");assert(quoteWindows(L"a\"b")==L"\"a\\\"b\"");assert(quoteWindows(L"C:\\end\\")==L"\"C:\\end\\\\\"");assert(quoteWindows(L"a&b$(x)")==L"\"a&b$(x)\"");std::cout<<"Project roundtrip, validation, command construction and quoting passed\n";}

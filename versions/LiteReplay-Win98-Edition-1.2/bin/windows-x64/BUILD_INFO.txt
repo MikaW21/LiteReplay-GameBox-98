@@ -1,0 +1,4 @@
+LiteReplay Win98 Edition 1.2 — 2026-11-22
+Software by Yuzi_Lj
+Windows x64 Release: WinLibs MinGW-w64 GCC 16.2.0 (POSIX/UCRT).
+Derived from LiteReplay Retro Edition 1.0. Windows shell, media-to-editor, editor dock, and startup animation smoke checks passed.

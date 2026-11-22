@@ -1,0 +1,13 @@
+{
+  "name": "litereplay",
+  "version-string": "1.3.0",
+  "description": "Native Windows GPU replay prototype",
+  "supports": "windows & x64",
+  "dependencies": [
+    {
+      "name": "ffmpeg",
+      "default-features": false,
+      "features": ["avcodec", "avformat", "swresample", "nvcodec"]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+#include "app_resources.h"
+
+IDI_LITEREPLAY ICON "../bin/windows-x64/assets/0.ico"
+IDB_GITHUB_AVATAR BITMAP "../bin/windows-x64/assets/github-avatar.bmp"
