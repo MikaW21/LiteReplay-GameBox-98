@@ -1,0 +1,30 @@
+PASS About loads the embedded GitHub avatar
+PASS About displays version 1.6
+PASS GitHub profile action is visible
+PASS profile action opens GitHub profile
+PASS download action opens project releases
+PASS tray and window use the embedded icon group
+PASS profile loaded and actual EXE starts session
+PASS game recording overrides
+PASS game browser shows saved card
+PASS three property tabs
+PASS manual end closes session and restores global defaults
+PASS late replay retains original session
+PASS screenshot and editor export retain kind
+PASS history and associations survive reload
+PASS game media filter
+PASS uncategorized media filter
+PASS disk totals from actual files
+PASS disk reports moved file
+PASS disk threshold persists
+PASS cleanup lists exact file and honors cancel
+PASS remove index retains actual file
+PASS manual categorization does not move file
+PASS history shows closed session
+PASS history filters by date
+PASS independent notification settings persist
+PASS disabled notification stays hidden
+PASS enabled notification shows game
+PASS test process started
+PASS new process starts another game session automatically
+PASS process exit closes session automatically

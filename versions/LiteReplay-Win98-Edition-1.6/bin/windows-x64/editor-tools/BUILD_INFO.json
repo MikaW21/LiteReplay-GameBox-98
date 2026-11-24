@@ -1,0 +1,89 @@
+{
+  "version": "0.1",
+  "date": "2026-11-08",
+  "compiler": "Zig 0.13.0, Windows x64 GNU, C++17 -O2",
+  "ffmpeg": "7.1.1, custom LGPL minimal static CLI build",
+  "executed_tests": [
+    "portable core tests",
+    "host CPU FFmpeg export pipeline"
+  ],
+  "unverified": [
+    "Windows UI and playback",
+    "Windows process cancellation",
+    "NVIDIA NVENC export",
+    "resource use"
+  ],
+  "binaries": {
+    "LiteCut.exe": {
+      "sha256": "583758cbfe7f5aef8ae4e601e1bdbafe82ba0bc780dc67a948f1913f1fc78990",
+      "size": 747008,
+      "format": "/workspace/scratch/bd8342dcd0b6/LiteCut/bin/windows-x64/LiteCut.exe: PE32+ executable (GUI) x86-64, for MS Windows, 6 sections",
+      "imports": [
+        "MFPlay.DLL",
+        "ole32.dll",
+        "COMCTL32.dll",
+        "comdlg32.dll",
+        "SHELL32.dll",
+        "GDI32.dll",
+        "USER32.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "KERNEL32.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-multibyte-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll"
+      ]
+    },
+    "ffmpeg.exe": {
+      "sha256": "eebeaab8f92a423fb76374b584fcc583b0b44da92e22f98379e35b3ac7c5b735",
+      "size": 7405568,
+      "format": "/workspace/scratch/bd8342dcd0b6/LiteCut/bin/windows-x64/ffmpeg.exe: PE32+ executable (console) x86-64 (stripped to external PDB), for MS Windows, 7 sections",
+      "imports": [
+        "SHELL32.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "KERNEL32.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-conio-l1-1-0.dll",
+        "bcrypt.dll"
+      ]
+    },
+    "ffprobe.exe": {
+      "sha256": "823fac3cae1ff86865e2116bb95710c0d33dbe9f57477cd66513a2e5a26d6724",
+      "size": 7359488,
+      "format": "/workspace/scratch/bd8342dcd0b6/LiteCut/bin/windows-x64/ffprobe.exe: PE32+ executable (console) x86-64 (stripped to external PDB), for MS Windows, 7 sections",
+      "imports": [
+        "SHELL32.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "KERNEL32.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "bcrypt.dll"
+      ]
+    }
+  }
+}

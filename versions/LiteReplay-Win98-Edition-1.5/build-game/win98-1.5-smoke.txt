@@ -1,0 +1,13 @@
+PASS About loads the embedded GitHub avatar
+PASS About displays version 1.5
+PASS GitHub profile action is visible
+PASS profile action opens GitHub profile
+PASS download action opens project releases
+PASS tray and window use the embedded icon group
+PASS matches actual process by path
+PASS profile overrides applied
+PASS native game library shows saved card
+PASS both custom categories loaded
+PASS completed replay counted by game output folder
+PASS property dialog has three pages
+PASS global settings restored

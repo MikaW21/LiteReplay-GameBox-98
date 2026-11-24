@@ -1,0 +1,5 @@
+LiteReplay Win98 Edition 1.6 — 2026-11-24
+Software by Yuzi_Lj
+Windows x64 Release: WinLibs MinGW-w64 GCC 16.2.0 (POSIX/UCRT).
+Derived from LiteReplay Retro Edition 1.0. The Windows build embeds the GitHub avatar and the shared Explorer, window, and tray icon.
+Game activity, media classification, status notifications, and disk space accounting.
